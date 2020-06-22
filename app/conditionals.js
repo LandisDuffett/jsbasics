@@ -96,5 +96,10 @@ let dish = {
 }
 
 function washDish(dish) {
-
+    if ((dish.yourDish) && (dish.isDirty)) {
+        return true
+    }
+    else {
+        return false
+    }
 }
