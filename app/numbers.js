@@ -19,6 +19,7 @@ function divideWholey(x, y) {
 // Write a function that takes in a number and determines if it is even. 
 // It should return a boolean value - true if it is even, false if it is odd.
 function isEven(num) {
+  return (num % 2 == 0);
 }
 
 
@@ -26,4 +27,7 @@ function isEven(num) {
 // Make it inclusive so that the starting and ending numbers are part 
 // of the range.HINT ** Utilize Javascript's Math Class (To the Google!)
 function numberGenerator(num1, num2) {
+  return Math.floor(
+    Math.random() * (num2 - num1 + 1) + min
+  )
 }
